@@ -2,7 +2,9 @@
 
 This is a websocket based draft simulator written in python.
 
-[![Build Status](https://travis-ci.org/Shiqan/vaindraft.svg?branch=develop)](https://travis-ci.org/Shiqan/vaindraft)
+```
+Make sure you install requirements before you use/run the application
+```
 
 ```
 docker build -t shiqan/vaindraft .
