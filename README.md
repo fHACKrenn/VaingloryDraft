@@ -1,19 +1,18 @@
 # Vainglory draft simulator with WebSocket
 
-This is a websocket based draft simulator written in python.
-
+Make sure you install requirements before you use/run the application by doing
 ```
-Make sure you install requirements before you use/run the application
+pip install -r requirements.txt
 ```
+in terminal/console
 
+## MutableMapping error
+If you encounter MutableMapping import error from collections,
+### For python version 3.10 or above
 ```
-docker build -t shiqan/vaindraft .
-docker run --name=vaindraft -d -p 8888:8888 shiqan/vaindraft
+from collections.abc import MutableMapping
 ```
-
-## Heroku 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-## License
-
-Licensed under the [MIT License](LICENSE).
+### For python version 3.9 or lower
+```
+from collections import MutableMapping
+```
